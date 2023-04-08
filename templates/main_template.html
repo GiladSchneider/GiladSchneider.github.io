@@ -41,7 +41,11 @@
     </nav>
 
     <!-- content -->
-    {% block content %}
-    {% endblock content %}
+    <div class="parent container d-flex justify-content-center align-items-center h-100">
+        <div class="child">
+          {% block content %}
+          {% endblock content %}
+        </div>
+      </div>
 </body>
 </html>
