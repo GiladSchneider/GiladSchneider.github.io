@@ -1,10 +1,8 @@
 # import dependencies
 import flask
-from flask_frozen import Freezer
 
 # create a flask app
 app = flask.Flask(__name__)
-freezer = Freezer(app)
 
 # create a route
 @app.route('/')
@@ -15,5 +13,4 @@ def index():
 
 # run the app
 if __name__ == '__main__':
-    freezer.freeze()
-    freezer.run(debug=True)
+    app.run(debug=True)
