@@ -6,6 +6,8 @@ app = flask.Flask(__name__)
 
 # create a route
 @app.route('/')
+@app.route('/index')
+@app.route('/home')
 def index():
     return 'Hello World!'
 
